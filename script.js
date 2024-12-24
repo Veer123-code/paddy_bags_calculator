@@ -88,7 +88,8 @@ const Amount = ()=>{
     let  b = document.getElementById("num2").value
     let  c = a*b
     let  d = document.getElementById("res").innerHTML= c/100;
-    let results  = document.getElementById("res").innerHTML ="CALCULATE THE AMOUNT IS: ₹ ,"+" "+d*2320
+    let max = document.getElementById("num3").value
+    let results  = document.getElementById("res").innerHTML ="CALCULATE THE AMOUNT IS: ₹ ,"+" "+d*max
     console.log(results);
     }
 
