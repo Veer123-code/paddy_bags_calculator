@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        .container{
+            width: 600px;
+            height: 60vh;
+            color:white;
+            margin-left:10%;
+            margin-right:50%;
+            margin-top: 0PX;
+            color:#000;
+        }
+
+        .container form{
+            background-color: aquamarine;
+            padding: 50px;
+        }
+        .container h3 , .container h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color:red;
+        }
+        .container form input{
+            margin: 10px;
+            padding: 10px 15px;
+            cursor:pointer;
+            border: none;
+        }
+        .container .box{
+            margin-top: 10px;
+            background: green;
+            color:white;
+            padding: 20px;
+
+        }
+        @media only screen and (min-width:300px) and (max-width:768px) {
+            .container{
+            width: 300px;
+            height: 30vh;
+            color:white;
+            margin-left:10px;
+            margin-right:10px;
+            color:#000;
+        }
+        .container form{
+            padding: 25px;
+        }
+        .container form input{
+            margin: 10px;
+            padding: 5px 10px;
+            
+        }
+        .container .box{
+            background: blue;
+            color:white;
+            padding: 15px;
+            font-size: 11px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        .container h1{
+            font-size: 17px;
+        }
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PADDY BAGS WEB APPLICATION </h1>
+        <form action="">
+            <marquee><h3>Calculation of Paddy Bags & Kintons, Amount</h3></marquee>
+            Total No of Paddy Bags : <input type="text" placeholder="Enter the no of Bags" id="num1"><br>
+            Weight of Each Bag is : <input type="text" placeholder="Weight Of Bag" id="num2"><br>
+            Convert to Kintons : <input type="button" placeholder="Enter the kintons" value="Kintons" onclick="kintons()"><br>
+            Total Amount : <input type="button" placeholder="Enter the kintons" value="Amount" onclick="Amount()">
+        </form>
+        <div class="box">
+            <p>The Result Is :<p>
+            <h4 id="res"></h4>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
